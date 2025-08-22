@@ -1,0 +1,12 @@
+div{
+    height: 100px;
+    width: 200px;
+    border: 2px solid rgb(115, 177, 215);
+    background-color: aliceblue;
+    color: rgb(49, 10, 10);
+    padding: 50px 10px 10px 30px;
+    margin: 300px 50px 50px 500px ;
+}
+body{
+    background-color: papayawhip;
+}
