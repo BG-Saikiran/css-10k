@@ -1,0 +1,16 @@
+/* Containers
+
+1. Child >
+2.descendent (space)
+3. adjeacent sibling selector +
+4. general sibling selector ~ 
+
+*/
+
+.container{
+    background-color: black;
+    color: aliceblue;
+}
+.container>.item2{
+    color: aqua;
+}
