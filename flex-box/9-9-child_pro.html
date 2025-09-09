@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 70%;
+            display: flex;
+            flex-wrap: wrap;
+            /* border: 2px solid; */
+            justify-content: center;
+            gap: 10px;
+        }
+        .img-container{
+            width: 250px;
+            height: 400px;
+            justify-content: center;
+            flex-grow: 1;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .parent{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+<div class="parent">
+        <div class="container">
+        <div class="img-container"><img src="https://www.w3schools.com/w3images/natureboy.jpg" alt=""></div>
+        <div class="img-container"><img src="https://www.w3schools.com/w3images/boy.jpg" alt=""></div>
+        <div class="img-container"><img src="https://www.w3schools.com/w3images/girl.jpg" alt=""></div>
+        <div class="img-container"><img src="https://www.w3schools.com/w3images/girl_mountain.jpg" alt=""></div>
+        <div class="img-container"><img src="https://www.w3schools.com/w3images/man_bench.jpg" alt=""></div>
+        <div class="img-container"><img src="https://www.w3schools.com/w3images/girl_train.jpg" alt=""></div>
+        <div class="img-container"><img src="https://www.w3schools.com/w3images/boy.jpg" alt=""></div>
+        <div class="img-container"><img src="https://www.w3schools.com/w3images/natureboy.jpg"  alt=""></div>
+        <div class="img-container"><img src="https://www.w3schools.com/w3images/closegirl.jpg" alt=""></div>
+    </div>
+</div>
+</body>
+</html>
