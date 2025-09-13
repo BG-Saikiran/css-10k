@@ -1,0 +1,91 @@
+  .main-container{
+            border: 2px solid ;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+            justify-content: center;
+            align-items: center;
+            background-color: powderblue;
+        }
+        .main-container>.item-containers{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 250px;
+            height: 250px;
+            border: 2px solid;
+            border-radius: 50%;
+            /* object-fit: cover; */
+            display: flex;
+            /* background-image: url("https://img.freepik.com/premium-photo/awesome-view-river-sky_954226-163780.jpg"); */
+        }
+        .main-container>.img1{
+            background-image: url("https://img.freepik.com/premium-photo/awesome-view-river-sky_954226-163780.jpg");
+            background-size: cover;       
+            background-position: center;  
+            background-repeat: no-repeat; 
+        }
+        .main-container > .img2 {
+            background-image: url("https://static.vecteezy.com/system/resources/previews/022/448/291/large_2x/save-earth-day-poster-environment-day-nature-green-ai-generative-glossy-background-images-tree-and-water-free-photo.jpg");
+            background-size: cover;       
+            background-position: center;  
+            background-repeat: no-repeat; 
+}
+
+        .main-container>.img3{
+            background-image: url("https://tse4.mm.bing.net/th/id/OIP.xvuhuLOv2SLu5hp7TECSSQHaJL?pid=Api&P=0&h=180");
+            background-size: cover;       
+            background-position: center;  
+            background-repeat: no-repeat; 
+        }
+        .main-container>.img4{
+            background-image: url("https://media.timeout.com/images/101507247/image.jpg");
+            background-size: cover;       
+            background-position: center;  
+            background-repeat: no-repeat; 
+        }
+        .main-container>.img5{
+            background-image: url("http://www.clipartbest.com/cliparts/jTx/69o/jTx69opBc.jpg");
+            background-size: cover;       
+            background-position: center;  
+            background-repeat: no-repeat; 
+        }
+        .main-container>.img6{
+            background-image: url("https://tse1.mm.bing.net/th/id/OIP.JMKQRluX3emB-SEy1vvFfgHaEK?pid=Api&P=0&h=180");
+            background-size: cover;       
+            background-position: center;  
+            background-repeat: no-repeat; 
+        }
+        .main-container>.img7{
+            background-image: url("http://getwallpapers.com/wallpaper/full/7/9/b/287356.jpg");
+            background-size: cover;       
+            background-position: center;  
+            background-repeat: no-repeat; 
+        }
+        .main-container>.img8{
+            background-image: url("https://tse3.mm.bing.net/th/id/OIP.zGR5X5RJwytDji75YBV-rgHaEK?pid=Api&P=0&h=180");
+            background-size: cover;       
+            background-position: center;  
+            background-repeat: no-repeat; 
+        }
+        .item-containers>.img-name{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 70px;
+            font-weight: bolder;
+            font-size: x-large;
+            color:rgb(253, 244, 244);
+            text-shadow: 2px 2px black;
+            display: none;
+        }
+
+        .item-containers:hover > .img-name {
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            margin-left: 70px;
+            font-weight: bolder;
+            font-size: x-large;
+            color: rgb(253, 244, 244);
+            text-shadow: 2px 2px black;
+    }
