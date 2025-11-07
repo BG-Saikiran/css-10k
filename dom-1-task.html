@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <h1 id="head">Welcome</h1>
+    <button onclick="changeText()">Click Me</button>
+
+    <h1 id="heading">Click a Button to Change Background Color</h1>
+        <button onclick="changeGreen()" >Green</button>
+        <button onclick="changeBlue() " >Blue</button>
+        <button onclick="changeRed()" >Red</button>
+        <button onclick="changeOrange()" >Orange</button>
+        <button onclick="changeReset()">Reset</button>
+    <script>
+        
+          function changeText() {
+          let head = document.getElementById("head")
+          head.innerText = "Hello Students!"
+          head.style.color = "green"
+          head.style.fontSize = "30px"
+          }
+         function changeGreen() {
+         document.body.style.backgroundColor = "green"
+         document.getElementById("heading").style.color = "white"
+         head.style.color = "white"
+         }
+
+         function changeBlue() {
+         document.body.style.backgroundColor = "Blue"
+         document.getElementById("heading").style.color = "orange"
+         head.style.color = "orange"
+         }
+
+         function changeRed() {
+         document.body.style.backgroundColor = "red"
+         document.getElementById("heading").style.color = "black"
+         head.style.color = "black"
+         }
+
+         function changeOrange() {
+         document.body.style.backgroundColor = "orange"
+         document.getElementById("heading").style.color = "blue"
+         head.style.color = "blue"
+         }
+
+         function changeReset() {
+         document.body.style.backgroundColor = "white"
+         document.getElementById("heading").style.color = "black"
+         head.style.color = "black"
+         }
+
+    </script>
+</body>
+</html>
