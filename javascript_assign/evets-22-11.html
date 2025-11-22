@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checking Password strength</title>
+    <style>
+        form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            flex-direction: column;
+        }
+        #container{
+            border: 1px solid;
+            padding: 50px;
+        }
+
+        #message {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <form id="myform">
+        <div id="container">
+            <label>PASSWORD: </label>
+            <input type="text" placeholder="Password" id="passwordInput">
+        </div>
+
+        <p id="message"></p>
+
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+
+        let inputBox = document.getElementById("passwordInput");
+        let message = document.getElementById("message");
+
+
+        inputBox.addEventListener("input", function (e) {
+            let length = e.target.value.length;
+
+            if(length <= 4){
+                message.innerHTML = "Weak";
+                message.style.color = "red";
+            }
+            else if(length > 4 && length < 7){
+                message.innerHTML = "Medium";
+                message.style.color = "orange";
+            }
+            else{
+                message.innerHTML = "Strong";
+                message.style.color = "green";
+            }
+        });
+
+
+        document.getElementById("myform").addEventListener("submit", function (e) {
+            let length = inputBox.value.length;
+
+            if(length > 7){
+                alert("Password submitted: " + inputBox.value);
+            } else {
+                e.preventDefault(); 
+                alert("Password must be strong!");
+            }
+        });
+
+    </script>
+</body>
+</html>
